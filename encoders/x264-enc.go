@@ -115,6 +115,7 @@ func (enc *X264ImageEncoder) Encode(img image.Image) {
 }
 
 func (enc *X264ImageEncoder) Close() {
+	enc.input.Close()
 	enc.closed = true
 	//enc.cmd.Process.Kill()
 }
