@@ -67,6 +67,7 @@ func (enc *X264ImageEncoder) Init(videoFileName string) {
 		//"-qmin", "7",
 		//"-slices", "4",
 		//"-vb", "2M",
+		"-pix_fmt", "yuv420p",
 
 		videoFileName,
 	)
